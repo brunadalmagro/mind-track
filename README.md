@@ -7,7 +7,7 @@
 </div>
 
 ## 📌 Visão Geral
-Aplicação para registro e análise de padrões emocionais em pessoas com TDAH, desenvolvida com:
+Aplicação para registro e análise de padrões emocionais para pessoas em tratamento psico-terapeutico, desenvolvida com:
 
 - **Backend**: Spring Boot 3 + JPA/Hibernate
 - **Frontend**: Thymeleaf + Bootstrap
