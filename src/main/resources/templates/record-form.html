@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:charset="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+    <title>Registrar Emoção</title>
+</head>
+<body>
+<h1>Registro de Pensamento/Emoção</h1>
+<form th:action="@{/records}" th:object="${record}" method="post">
+    <div>
+        <label>Situação:</label>
+        <input type="text" th:field="*{situation}" required>
+    </div>
+    <div>
+        <label>Pensamento:</label>
+        <textarea th:field="*{thought}" required></textarea>
+    </div>
+    <div>
+        <label>Emoção:</label>
+        <input type="text" th:field="*{emotion}" required>
+    </div>
+    <div>
+        <label>Intensidade (1-10):</label>
+        <input type="number" th:field="*{intensity}" min="1" max="10" required>
+    </div>
+    <button type="submit">Registrar</button>
+</form>
+</body>
+</html>

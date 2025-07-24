@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Histórico de Emoções</title>
+</head>
+<body>
+<h1>Meus Registros</h1>
+<table border="1">
+    <tr>
+        <th>Data/Hora</th>
+        <th>Situação</th>
+        <th>Pensamento</th>
+        <th>Emoção</th>
+        <th>Intensidade</th>
+    </tr>
+    <tr th:each="record : ${records}">
+        <td th:text="${record.timestamp}"></td>
+        <td th:text="${record.situation}"></td>
+        <td th:text="${record.thought}"></td>
+        <td th:text="${record.emotion}"></td>
+        <td th:text="${record.intensity}"></td>
+    </tr>
+</table>
+</body>
+</html>
